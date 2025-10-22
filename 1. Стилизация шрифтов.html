@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Стилизация шрифтов</title>
+    <style>
+        @font-face
+        {
+            font-family: PTSansNarrow;
+            src:url(PTSansNarrow-Regular.ttf);
+        }
+        @font-face
+        {
+            font-family: IndieFlower;
+            src:url(IndieFlower-Regular.ttf);
+        }
+    </style>
+</head>
+<body>
+    <p style="font-family: Calibri, Arial, Verdana, sans-serif">
+        Свойство <span style="font-weight:bold">font-family</span> устанавливает семейство шрифтов, которое будет использоваться.
+        <span style="font-size: xx-large;"> Шрифт свойства font-family будет работать, 
+            только если у пользователя на локальном компьютере имеется такой же шрифт.</span>
+        Если ни Calibri, ни Arial, ни Verdana не поддерживаются на компьютере пользователя,
+        то используется sans-serif - универсальный шрифт без засечек.
+    </p>
+    <p style="font-family: Times New Roman, Georgia, Garamond, serif">
+        Распространенные шрифты с засечками: <span style="font-style:italic">Times New Roman, Georgia, Garamond.</span>
+        Универсальный обобщенный шрифт с засечками представляет значение serif.
+    </p>
+    <p style="font-family: Courier, Courier New, Consolas, Lucida Console">
+        Моноширинный шрифт преимущественно применяется для отображения программного кода и не предназначен для вывода стандартного текста статей.
+        Свое название эти шрифты получили от того, что каждая буква в таком шрифте имеет одинаковую ширину.
+    </p>
+    <p style="font-size:30pt;font-family: pussy">
+        The @font-face rule allows custom fonts to be loaded on a webpage.
+    </p>
+    <!--
+    medium: базовый размер шрифта браузера (16 пикселей)
+    small: 13 пикселей
+    x-small: 10 пикселей
+    xx-small: 9 пикселей
+    large: 18 пикселей
+    x-large: 24 пикселя
+    xx-large: 32 пикселя
+    -->
+    <p style="font-size:xx-large;font-family: IndieFlower">
+        The @font-face rule allows custom fonts to be loaded on a webpage.
+    </p>
+    <!--https://www.google.com/fonts/-->
+</body>
+</html>
